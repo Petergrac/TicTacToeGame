@@ -1,0 +1,142 @@
+:root{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+@media(prefer-color-scheme: dark){
+    :root{
+        color: rgb(245, 190, 87);
+    }
+}
+/* The whole container */
+.container{
+    height: 100vh;
+}
+
+/* Heading */
+.heading{
+    display: grid;
+    grid-row: 1/2;
+    background: rgb(0, 61, 63);
+    height: 20%;
+    place-content: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    border-radius: 15px;
+}
+
+/* Main section */
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+    height: 80vh;
+    gap: 0px 15px;
+    padding: 10px;
+    background: #000;
+}
+
+/* Side bar */
+.sidebar{
+    padding: 10px;
+    grid-area: 1/1/2/2;
+    background: linear-gradient(110deg, rgb(96, 44, 44), rgb(46, 17, 56), rgb(233, 5, 123));
+    border-radius: 10px;
+}
+label{
+    display: inline-grid;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.input{
+    border-radius: 5px;
+    border: 2px rgb(209, 241, 105) solid;
+    height: 26px;
+    background: #01144770;
+}
+input:invalid{
+    border: red 2px solid;
+}
+input:focus{
+    border: rgb(20, 212, 250) 2px solid;
+}
+.buttons{
+    display: flex;
+    padding: 15px;
+    height: 50px;
+    justify-content: center;
+}
+button{
+    color: inherit;
+    background: rgb(0, 106, 255);
+    font-weight: bolder;
+    border: 1px solid  rgb(0, 106, 255);
+    border-radius: 7px;
+    font-size: 1.2rem;
+
+    box-shadow: 2px 3px 4px rgb(0, 255, 34);
+}
+button:hover{
+    color:  rgb(0, 106, 255);
+    background: white;
+    transition: all .3s ease-in-out;
+    translate: 0 -3px;
+}
+
+/* Grid Area */
+.grid{
+    grid-area: 1/2/2/-1;
+    background: #301f67;
+    border-radius: 10px;
+}
+.gameGrid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rowButtons{
+    padding-top: 20px;
+}
+.rows{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.button{
+    font-weight: bold;
+    font-size: 3rem;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+    background: #e97d7d68;
+    width: 100px;
+    height: 100px;
+}
+.playerName{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.resetButton{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.reset{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 110px;
+    height: 50px;
+    box-shadow: 1px 1px 7px rgb(245, 0, 147);
+}
+.icons{
+    width: 25px;
+    height: 25px;
+}
